@@ -1,0 +1,102 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 26px;
+}
+
+body {
+    background: #242424;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    width: 65vw;
+    margin: auto;
+    font-size: 30px;
+
+    color: white;
+}
+
+.nav-user a {
+    text-decoration: none;
+    color: white;
+    transition: 0.1s ease-in-out;
+}
+
+.nav-user a:hover {
+    color: darkslateblue;
+    transition: 0.1s ease-in-out;
+}
+
+.nav-title, .nav-user {
+    padding: 0 20px;
+    user-select: none;
+}
+
+.card-container {
+    display: flex;
+    width: 65vw;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    background: grey;
+
+    height: 10rem;
+    width: 10rem;
+
+    margin: 20px;
+    padding: 10px;
+    border-radius: 0.5rem;
+
+    font-weight: 600;
+
+    box-shadow: 2px 2px #141414;
+}
+
+.wallet-qr {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.wallet-qr img {
+    width: 100%;
+    transition: ease-in-out 0.6s;
+}
+
+.wallet-qr img:hover {
+    width: 150%;
+    transition: ease-out 0.8s;
+}
+
+.wallet-qr:hover ~ .wallet-address {
+    opacity: 0;
+}
+
+.wallet-address {
+    transition: 0.2s ease-in-out 0.2s;
+}
+
+.wallet-address button {
+    border: #242424;
+    background-color: darkslateblue;
+    color: white;
+    height: 1.5rem;
+    width: 7rem;
+    border-radius: 0.2rem;
+}
+
+.wallet-address button:hover {
+    border: #242424 solid 2px;
+}

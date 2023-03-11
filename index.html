@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Crypto Wallets</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-title">
+            <span>Wallets</span>
+        </div>
+        <div class="nav-user">
+            <a href="https://github.com/BasilThaddeus"> GitHub</a>
+        </div>
+    </div>
+
+    <div class="card-container">
+        <div class="card card1">
+            <div class="wallet-qr">
+                <img src="img/qr-code.png">
+            </div>
+            <div class="wallet-name">Ethereum</div>
+            <div class="wallet-address">
+                <button onclick="copyToClipboard(1)">Copy to Clipboard</button>
+            </div>
+        </div>
+        
+        <div class="card card2">
+            <div class="wallet-qr">
+                <img src="img/qr-code.png">
+            </div>
+            <div class="wallet-name">Ethereum</div>
+            <div class="wallet-address">
+                <button onclick="copyToClipboard(2)">Copy to Clipboard</button>
+            </div>
+        </div>
+        
+        <div class="card card3">
+            <div class="wallet-qr">
+                <img src="img/qr-code.png">
+            </div>
+            <div class="wallet-name">Ethereum</div>
+            <div class="wallet-address">
+                <button onclick="copyToClipboard(3)">Copy to Clipboard</button>
+            </div>
+        </div>
+        
+        <div class="card card4">
+            <div class="wallet-qr">
+                <img src="img/qr-code.png">
+            </div>
+            <div class="wallet-name">Ethereum</div>
+            <div class="wallet-address">
+                <button onclick="copyToClipboard(4)">Copy to Clipboard</button>
+            </div>
+        </div>
+        
+        <div class="card card5">
+            <div class="wallet-qr">
+                <img src="img/qr-code.png">
+            </div>
+            <div class="wallet-name">Ethereum</div>
+            <div class="wallet-address">
+                <button onclick="copyToClipboard(5)">Copy to Clipboard</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let dict = [
+            "0xc0ffee254729296a45a3885639AC7E10F9d54979",
+            "0xc0ffee254729296a45a3885639AC7E10F9d54979",
+            "0xc0ffee254729296a45a3885639AC7E10F9d54979",
+            "0xc0ffee254729296a45a3885639AC7E10F9d54979",
+            "0xc0ffee254729296a45a3885639AC7E10F9d54979"
+        ]
+        function copyToClipboard(value) {
+            navigator.clipboard.writeText(dict[value]);
+        }
+    </script>
+</body>
+</html>
